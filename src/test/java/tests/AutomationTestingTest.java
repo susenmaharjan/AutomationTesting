@@ -65,5 +65,7 @@ public class AutomationTestingTest {
 
         register.SelectLanguages(languages);
 
+        register.SelectSkill("Android");
+
     }
 }
