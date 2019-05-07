@@ -70,6 +70,7 @@ public class Register {
         for (WebElement language : selectedLanguages) {
             language.click();
         }
+        languageDropdown.click();
     }
 
     public void SelectSkill(String selectedSkill) {
@@ -82,5 +83,16 @@ public class Register {
 
 
         skill.click();
+    }
+
+    public void SelectCountry(String selectedCountry) {
+        WebElement countriesElement = _webDriver.findElement(By.id("countries"));
+
+        WebElement country = countriesElement.findElements(By.tagName("option"))
+                                .stream()
+                                .filter(x->x.getAttribute("value").equals(selectedCountry))
+                                .collect(Collectors.toList()).get(0);
+
+        country.click();
     }
 }
