@@ -64,9 +64,9 @@ public class Register {
         languageDropdown.click();
 
         List<WebElement> languageList = _webDriver.findElements(By.className("ui-corner-all"));
-        List<WebElement> test = languageList.stream().filter(x->languages.contains(x.getText())).collect(Collectors.toList());
+        List<WebElement> selectedLanguages = languageList.stream().filter(x -> languages.contains(x.getText())).collect(Collectors.toList());
 
-        for (WebElement language : test) {
+        for (WebElement language : selectedLanguages) {
             System.out.println(language.getText());
         }
 
