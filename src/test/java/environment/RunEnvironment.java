@@ -13,9 +13,9 @@ public class RunEnvironment {
         RunEnvironment._webDriver = webDriver;
     }
 
-    public static void WaitDriver() {
+    public static void WaitDriver(int millis) {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(millis);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

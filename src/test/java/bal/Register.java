@@ -86,13 +86,65 @@ public class Register {
     }
 
     public void SelectCountry(String selectedCountry) {
-        WebElement countriesElement = _webDriver.findElement(By.id("countries"));
+        Select countriesList = new Select(_webDriver.findElement(By.id("countries")));
+        countriesList.selectByValue(selectedCountry);
+    }
 
-        WebElement country = countriesElement.findElements(By.tagName("option"))
-                                .stream()
-                                .filter(x->x.getAttribute("value").equals(selectedCountry))
-                                .collect(Collectors.toList()).get(0);
+    public void SelectCountryFromComboBox(String selectedCountry) {
+        _webDriver.findElement(By.className("select2-selection--single")).click();
 
+        WebElement textBox = _webDriver.findElement(By.className("select2-search__field"));
+        textBox.sendKeys(selectedCountry);
+
+        WebElement countriesElement = _webDriver.findElement(By.className("select2-results__options"));
+
+        WebElement country = countriesElement.findElements(By.tagName("li"))
+                .stream()
+                .filter(x -> x.getText().equals(selectedCountry))
+                .collect(Collectors.toList()).get(0);
         country.click();
+    }
+
+    public void SelectYear(String selectedYear) {
+        Select yearList = new Select(_webDriver.findElement(By.id("yearbox")));
+        yearList.selectByValue(selectedYear);
+    }
+
+    public void SelectMonth(String selectedMonth) {
+
+        Select monthList = new Select(_webDriver.findElement(By.xpath("//select[@ng-model='monthbox']")));
+
+        monthList.selectByValue(selectedMonth);
+    }
+
+    public void SelectDay(String selectedDay) {
+        Select dayList = new Select(_webDriver.findElement(By.id("daybox")));
+        dayList.selectByValue(selectedDay);
+    }
+
+    public void SetFirstPassword(String password) {
+        WebElement passwordElement = _webDriver.findElement(By.id("firstpassword"));
+        passwordElement.sendKeys(password);
+    }
+
+    public void SetSecondPassword(String password) {
+        WebElement passwordElement = _webDriver.findElement(By.id("secondpassword"));
+        passwordElement.sendKeys(password);
+    }
+
+    public void UploadPhoto(String path) {
+        WebElement uploadPhotoElement = _webDriver.findElement(By.id("imagesrc"));
+        uploadPhotoElement.sendKeys(path);
+    }
+
+    public void Submit() {
+        _webDriver.findElement(By.id("submitbtn")).click();
+    }
+
+    public void RedirectIfInvalid() {
+        String url = _webDriver.getCurrentUrl();
+        if(!url.equals("http://demo.automationtesting.in/WebTable.html")){
+            _webDriver.get("http://demo.automationtesting.in/WebTable.html");
+        }
     }
 }
