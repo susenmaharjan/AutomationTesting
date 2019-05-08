@@ -3,6 +3,7 @@ package bal;
 import enums.Gender;
 import environment.RunEnvironment;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -77,6 +78,8 @@ public class WebTable {
     public void PaginationTextBox() {
         WebElement textBox = _webDriver.findElement(By.xpath("//input[@ng-model='grid.options.paginationCurrentPage']"));
         textBox.clear();
+
+        /*
         textBox.sendKeys("2");
         RunEnvironment.WaitDriver(2000);
         textBox.clear();
@@ -85,5 +88,10 @@ public class WebTable {
         textBox.clear();
         textBox.sendKeys("4");
         RunEnvironment.WaitDriver(2000);
+
+        textBox.clear();
+
+         */
+        textBox.sendKeys(Keys.chord(Keys.ARROW_UP));
     }
 }

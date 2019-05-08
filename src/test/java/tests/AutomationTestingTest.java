@@ -180,7 +180,7 @@ public class AutomationTestingTest {
 
     @Test
     @Order(21)
-    public void WebTable_Pagination_Textbox(){
+    public void WebTable_Pagination_TextBox(){
         _webTable.PaginationTextBox();
     }
 
