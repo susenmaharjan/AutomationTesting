@@ -77,21 +77,16 @@ public class WebTable {
 
     public void PaginationTextBox() {
         WebElement textBox = _webDriver.findElement(By.xpath("//input[@ng-model='grid.options.paginationCurrentPage']"));
-        textBox.clear();
 
-        /*
-        textBox.sendKeys("2");
-        RunEnvironment.WaitDriver(2000);
-        textBox.clear();
-        textBox.sendKeys("3");
-        RunEnvironment.WaitDriver(2000);
-        textBox.clear();
-        textBox.sendKeys("4");
-        RunEnvironment.WaitDriver(2000);
-
-        textBox.clear();
-
-         */
         textBox.sendKeys(Keys.chord(Keys.ARROW_UP));
+        RunEnvironment.WaitDriver(2000);
+
+        textBox.sendKeys(Keys.chord(Keys.ARROW_UP));
+        RunEnvironment.WaitDriver(200);
+
+        textBox.sendKeys(Keys.chord(Keys.ARROW_DOWN));
+        RunEnvironment.WaitDriver(2000);
+
+        textBox.sendKeys(Keys.chord(Keys.ARROW_DOWN));
     }
 }

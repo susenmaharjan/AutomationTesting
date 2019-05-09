@@ -11,6 +11,7 @@ import tests.AutomationTestingTest;
 import static org.junit.platform.engine.discovery.DiscoverySelectors.selectClass;
 
 public class Runner {
+
     SummaryGeneratingListener listener = new SummaryGeneratingListener();
     public static void main(String[] args) {
         Runner runner = new Runner();
