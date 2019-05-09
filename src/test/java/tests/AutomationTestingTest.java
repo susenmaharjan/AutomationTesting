@@ -1,8 +1,6 @@
 package tests;
 
-import bal.Home;
-import bal.Register;
-import bal.WebTable;
+import bal.*;
 import enums.Gender;
 import environment.EnvironmentManager;
 import environment.RunEnvironment;
@@ -17,6 +15,9 @@ public class AutomationTestingTest {
     private static WebDriver _webDriver;
     private static Register _register;
     private static WebTable _webTable;
+    private static Alert _alert;
+    private static Widget _widget;
+    private static final String alertPage = "http://demo.automationtesting.in/Alerts.html";
 
     @BeforeAll
     public static void SetUp() {
@@ -24,6 +25,8 @@ public class AutomationTestingTest {
         _webDriver = RunEnvironment.GetWebDriver();
         _register = new Register(_webDriver);
         _webTable = new WebTable(_webDriver);
+        _alert = new Alert(_webDriver);
+        _widget = new Widget(_webDriver);
     }
 
     @AfterEach
@@ -184,4 +187,46 @@ public class AutomationTestingTest {
         _webTable.PaginationTextBox();
     }
 
+    @Test
+    @Order(22)
+    public void Alert_WithOk(){
+        _webDriver.get(alertPage);
+        _alert.AlertWithOk();
+    }
+
+    @Test
+    @Order(23)
+    public void AlertWithOkAndCancel(){
+        if(_webDriver.getCurrentUrl()!=alertPage){
+            _webDriver.get(alertPage);
+        }
+        _alert.AlertWithOkAndCancel();
+    }
+
+    @Test
+    @Order(24)
+    public void AlertWithTextBox(){
+        if(_webDriver.getCurrentUrl()!=alertPage){
+            _webDriver.get(alertPage);
+        }
+        _alert.AlertWithTextBox();
+    }
+
+    @Test
+    @Order(25)
+    public void Widget_AutoComplete(){
+        if(_webDriver.getCurrentUrl()!="http://demo.automationtesting.in/AutoComplete.html"){
+            _webDriver.get("http://demo.automationtesting.in/AutoComplete.html");
+        }
+        _widget.AutoComplete("Ne");
+    }
+
+    @Test
+    @Order(26)
+    public void Widget_DatePicker(){
+        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Datepicker.html")){
+            _webDriver.get("http://demo.automationtesting.in/Datepicker.html");
+        }
+        _widget.DatePickerDisabled("15");
+    }
 }
