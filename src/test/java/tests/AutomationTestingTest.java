@@ -240,8 +240,8 @@ public class AutomationTestingTest {
     @Test
     @Order(27)
     public void Widget_Slider() {
-        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("https://jqueryui.com/slider")) {
-            _webDriver.get("https://jqueryui.com/slider");
+        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Slider.html")) {
+            _webDriver.get("http://demo.automationtesting.in/Slider.html");
         }
         _widget.Slider();
     }
