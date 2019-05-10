@@ -2,12 +2,15 @@ package bal;
 
 import environment.EnvironmentManager;
 import environment.RunEnvironment;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.Locatable;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.List;
 
 public class Interaction {
@@ -16,7 +19,7 @@ public class Interaction {
 
     public Interaction(WebDriver webDriver, Actions actions) {
         _webDriver = webDriver;
-        _actions=actions;
+        _actions = actions;
     }
 
     public void StaticDragAndDrop() {
@@ -24,7 +27,26 @@ public class Interaction {
         WebElement dragged = _webDriver.findElement(By.id("mongo"));
         WebElement dropped = _webDriver.findElement(By.id("droparea"));
 
-        _actions.clickAndHold(dragged).moveToElement(dropped).release().build().perform();
+
+        //_actions.clickAndHold(dragged).moveToElement(dropped).release().build().perform();
+        //_actions.dragAndDrop(dragged, dropped).build().perform();
+
+        Point pointX = ((Locatable) dragged).getCoordinates().inViewPort();
+        int draggedX = pointX.getX();
+        int draggedY = pointX.getY();
+
+        Point pointY = ((Locatable)dropped).getCoordinates().inViewPort();
+        int droppedX = pointX.getX();
+        int droppedY = pointY.getY();
+
+        try {
+            new Actions(_webDriver).dragAndDrop(dragged, dropped).release().build().perform();
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ESCAPE);
+            robot.keyRelease(KeyEvent.VK_ESCAPE);
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
     }
 
     public void SelectableSerialize() {
@@ -40,8 +62,9 @@ public class Interaction {
 
     }
 
-    public void Resizable(){
+    public void Resizable() {
         WebElement resizable = _webDriver.findElement(By.className("ui-icon-gripsmall-diagonal-se"));
-        _actions.clickAndHold(resizable).moveByOffset(150,200).release().build().perform();
+        _actions.clickAndHold(resizable).moveByOffset(150, 200).release().build().perform();
     }
+
 }

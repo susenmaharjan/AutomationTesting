@@ -14,12 +14,12 @@ import java.util.List;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AutomationTestingTest {
     private static WebDriver _webDriver;
-    private  static Actions _actions;
+    private static Actions _actions;
     private static Register _register;
     private static WebTable _webTable;
     private static Alert _alert;
     private static Widget _widget;
-    private  static Interaction _interaction;
+    private static Interaction _interaction;
 
     private static final String alertPage = "http://demo.automationtesting.in/Alerts.html";
 
@@ -33,7 +33,7 @@ public class AutomationTestingTest {
         _webTable = new WebTable(_webDriver);
         _alert = new Alert(_webDriver);
         _widget = new Widget(_webDriver);
-        _interaction = new Interaction(_webDriver,_actions);
+        _interaction = new Interaction(_webDriver, _actions);
     }
 
     @AfterEach
@@ -178,33 +178,33 @@ public class AutomationTestingTest {
 
     @Test
     @Order(19)
-    public void WebTable_SortByLastName(){
+    public void WebTable_SortByLastName() {
         _webTable.SortByLastName();
     }
 
     @Test
     @Order(20)
-    public void WebTable_SortByPhoneNumber(){
+    public void WebTable_SortByPhoneNumber() {
         _webTable.SortByPhoneNumber();
     }
 
     @Test
     @Order(21)
-    public void WebTable_Pagination_TextBox(){
+    public void WebTable_Pagination_TextBox() {
         _webTable.PaginationTextBox();
     }
 
     @Test
     @Order(22)
-    public void Alert_WithOk(){
+    public void Alert_WithOk() {
         _webDriver.get(alertPage);
         _alert.AlertWithOk();
     }
 
     @Test
     @Order(23)
-    public void AlertWithOkAndCancel(){
-        if(_webDriver.getCurrentUrl()!=alertPage){
+    public void AlertWithOkAndCancel() {
+        if (_webDriver.getCurrentUrl() != alertPage) {
             _webDriver.get(alertPage);
         }
         _alert.AlertWithOkAndCancel();
@@ -212,8 +212,8 @@ public class AutomationTestingTest {
 
     @Test
     @Order(24)
-    public void AlertWithTextBox(){
-        if(_webDriver.getCurrentUrl()!=alertPage){
+    public void AlertWithTextBox() {
+        if (_webDriver.getCurrentUrl() != alertPage) {
             _webDriver.get(alertPage);
         }
         _alert.AlertWithTextBox();
@@ -221,8 +221,8 @@ public class AutomationTestingTest {
 
     @Test
     @Order(25)
-    public void Widget_AutoComplete(){
-        if(_webDriver.getCurrentUrl()!="http://demo.automationtesting.in/AutoComplete.html"){
+    public void Widget_AutoComplete() {
+        if (_webDriver.getCurrentUrl() != "http://demo.automationtesting.in/AutoComplete.html") {
             _webDriver.get("http://demo.automationtesting.in/AutoComplete.html");
         }
         _widget.AutoComplete("Ne");
@@ -230,8 +230,8 @@ public class AutomationTestingTest {
 
     @Test
     @Order(26)
-    public void Widget_DatePicker(){
-        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Datepicker.html")){
+    public void Widget_DatePicker() {
+        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Datepicker.html")) {
             _webDriver.get("http://demo.automationtesting.in/Datepicker.html");
         }
         _widget.DatePickerDisabled("15");
@@ -239,17 +239,17 @@ public class AutomationTestingTest {
 
     @Test
     @Order(27)
-    public void Widget_Slider(){
-        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Slider.html")) {
-            _webDriver.get("http://demo.automationtesting.in/Slider.html");
+    public void Widget_Slider() {
+        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("https://jqueryui.com/slider")) {
+            _webDriver.get("https://jqueryui.com/slider");
         }
         _widget.Slider();
     }
 
     @Test
     @Order(28)
-    public void Interaction_StaticDragAndDrop(){
-        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Static.html")){
+    public void Interaction_StaticDragAndDrop() {
+        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Static.html")) {
             _webDriver.get("http://demo.automationtesting.in/Static.html");
         }
         _interaction.StaticDragAndDrop();
@@ -257,8 +257,8 @@ public class AutomationTestingTest {
 
     @Test
     @Order(29)
-    public void Interaction_SelectableSerialize(){
-        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Selectable.html")){
+    public void Interaction_SelectableSerialize() {
+        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Selectable.html")) {
             _webDriver.get("http://demo.automationtesting.in/Selectable.html");
         }
         _interaction.SelectableSerialize();
@@ -266,10 +266,19 @@ public class AutomationTestingTest {
 
     @Test
     @Order(30)
-    public void Interaction_Resizable(){
-        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Resizable.html")){
+    public void Interaction_Resizable() {
+        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Resizable.html")) {
             _webDriver.get("http://demo.automationtesting.in/Resizable.html");
         }
         _interaction.Resizable();
+    }
+
+    @Test
+    @Order(31)
+    void TakeScreenshot() {
+        RunEnvironment.TakeScreenShot(
+                "D:\\Susen\\Automated Testing\\Screenshot",
+                "ScreenShot1",
+                "png");
     }
 }
