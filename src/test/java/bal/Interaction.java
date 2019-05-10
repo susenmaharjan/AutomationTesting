@@ -1,16 +1,8 @@
 package bal;
 
-import environment.EnvironmentManager;
-import environment.RunEnvironment;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.Locatable;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.io.File;
 import java.util.List;
 
 public class Interaction {
@@ -23,29 +15,12 @@ public class Interaction {
     }
 
     public void StaticDragAndDrop() {
-
-        WebElement dragged = _webDriver.findElement(By.id("mongo"));
-        WebElement dropped = _webDriver.findElement(By.id("droparea"));
-
-
-        //_actions.clickAndHold(dragged).moveToElement(dropped).release().build().perform();
-        //_actions.dragAndDrop(dragged, dropped).build().perform();
-
-        Point pointX = ((Locatable) dragged).getCoordinates().inViewPort();
-        int draggedX = pointX.getX();
-        int draggedY = pointX.getY();
-
-        Point pointY = ((Locatable)dropped).getCoordinates().inViewPort();
-        int droppedX = pointX.getX();
-        int droppedY = pointY.getY();
-
-        try {
-            new Actions(_webDriver).dragAndDrop(dragged, dropped).release().build().perform();
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_ESCAPE);
-            robot.keyRelease(KeyEvent.VK_ESCAPE);
-        } catch (AWTException e) {
-            e.printStackTrace();
+        JavascriptExecutor jsDriver = (JavascriptExecutor)_webDriver;
+        {
+            WebElement dragged = _webDriver.findElement(By.id("angular"));
+            WebElement dropped = _webDriver.findElement(By.id("droparea"));
+            Actions builder = new Actions(_webDriver);
+            builder.dragAndDrop(dragged, dropped).perform();
         }
     }
 

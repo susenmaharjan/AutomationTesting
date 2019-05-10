@@ -1,6 +1,5 @@
 package bal;
 
-import environment.RunEnvironment;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,6 +43,7 @@ public class Widget {
     }
 
     public void Slider(){
+        /*
         _webDriver.switchTo().frame(0);
 
         RunEnvironment.WaitDriver(5000);
@@ -51,6 +51,14 @@ public class Widget {
         WebElement slider = _webDriver.findElement(By.xpath("//div[@id='slider']/a"));
         Actions moveAction = new Actions(_webDriver);
         moveAction.dragAndDropBy(slider,80,0).build().perform();
+
+         */
+        //WebElement element = _webDriver.findElement(By.cssSelector(".ui-slider-handle"));
+        Actions builder = new Actions(_webDriver);
+
+        WebElement slider = _webDriver.findElement((By.id("slider")));
+        builder.dragAndDropBy(slider,80,0).build().perform();
+        slider.click();
 
     }
 }
