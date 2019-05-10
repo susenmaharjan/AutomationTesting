@@ -3,6 +3,7 @@ package bal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
@@ -32,13 +33,18 @@ public class Widget {
 
         List<WebElement> columns = dateWidget.findElements(By.tagName("td"));
 
-        System.out.println("Size = " + columns.size());
-
         for (WebElement cell : columns) {
             if(cell.getText().equals(date)){
                 cell.click();
                 break;
             }
         }
+    }
+
+    public void Slider(){
+        _webDriver.switchTo().frame(0);
+        WebElement slider = _webDriver.findElement(By.xpath("//div[@class='container']/div[@class='row']/div[@class='col-xs-8 col-xs-offset-2 ']/div[@id='slider']/a[@class='ui-slider-handle ui-state-default ui-corner-all ui-state-focus ui-state-hover']"));
+        Actions moveAction = new Actions(_webDriver);
+        moveAction.dragAndDropBy(slider,30,0).build().perform();
     }
 }

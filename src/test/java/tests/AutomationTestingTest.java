@@ -6,6 +6,7 @@ import environment.EnvironmentManager;
 import environment.RunEnvironment;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,20 +14,26 @@ import java.util.List;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AutomationTestingTest {
     private static WebDriver _webDriver;
+    private  static Actions _actions;
     private static Register _register;
     private static WebTable _webTable;
     private static Alert _alert;
     private static Widget _widget;
+    private  static Interaction _interaction;
+
     private static final String alertPage = "http://demo.automationtesting.in/Alerts.html";
 
     @BeforeAll
     public static void SetUp() {
         EnvironmentManager.InitWebDriver("http://demo.automationtesting.in");
         _webDriver = RunEnvironment.GetWebDriver();
+        _actions = new Actions(_webDriver);
+
         _register = new Register(_webDriver);
         _webTable = new WebTable(_webDriver);
         _alert = new Alert(_webDriver);
         _widget = new Widget(_webDriver);
+        _interaction = new Interaction(_webDriver,_actions);
     }
 
     @AfterEach
@@ -228,5 +235,41 @@ public class AutomationTestingTest {
             _webDriver.get("http://demo.automationtesting.in/Datepicker.html");
         }
         _widget.DatePickerDisabled("15");
+    }
+
+    @Test
+    @Order(27)
+    public void Widget_Slider(){
+        if (!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Slider.html")) {
+            _webDriver.get("http://demo.automationtesting.in/Slider.html");
+        }
+        _widget.Slider();
+    }
+
+    @Test
+    @Order(28)
+    public void Interaction_StaticDragAndDrop(){
+        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Static.html")){
+            _webDriver.get("http://demo.automationtesting.in/Static.html");
+        }
+        _interaction.StaticDragAndDrop();
+    }
+
+    @Test
+    @Order(29)
+    public void Interaction_SelectableSerialize(){
+        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Selectable.html")){
+            _webDriver.get("http://demo.automationtesting.in/Selectable.html");
+        }
+        _interaction.SelectableSerialize();
+    }
+
+    @Test
+    @Order(30)
+    public void Interaction_Resizable(){
+        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Resizable.html")){
+            _webDriver.get("http://demo.automationtesting.in/Resizable.html");
+        }
+        _interaction.Resizable();
     }
 }
