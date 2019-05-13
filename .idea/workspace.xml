@@ -7,9 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5e06f1-d384-43ac-b1f4-a243ebb5345a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/AutomationTesting_jar/AutomationTesting.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bal/Interaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bal/Interaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bal/FileUpload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bal/Modals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AutomationTesting_jar/AutomationTesting.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/AutomationTesting_jar/AutomationTesting.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/bal/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bal/Widget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/AutomationTestingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/AutomationTestingTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-335">
-              <caret line="244" column="9" lean-forward="true" selection-start-line="244" selection-start-column="9" selection-end-line="244" selection-end-column="9" />
+            <state relative-caret-position="222">
+              <caret line="313" column="26" selection-start-line="313" selection-start-column="26" selection-end-line="313" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,10 +41,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/bal/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="135" column="48" lean-forward="true" selection-start-line="135" selection-start-column="48" selection-end-line="135" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bal/Interaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="104">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bal/WebTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="89" column="54" lean-forward="true" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
+            <state relative-caret-position="413">
+              <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#368#369#0" expanded="true" />
@@ -62,13 +80,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bal/Widget.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="-117">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#AutoComplete#0;class#Widget#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/bal/Modals.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/bal/FileUpload.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,9 +135,11 @@
       <find>Actions</find>
       <find>java</find>
       <find>dragga</find>
-      <find>Slider</find>
       <find>Drag</find>
       <find>DragA</find>
+      <find>Slider</find>
+      <find>Date</find>
+      <find>upload</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,9 +161,11 @@
         <option value="$PROJECT_DIR$/src/test/java/bal/Alert.java" />
         <option value="$PROJECT_DIR$/src/test/java/environment/EnvironmentManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/environment/RunEnvironment.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/bal/Interaction.java" />
         <option value="$PROJECT_DIR$/src/test/java/bal/Widget.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bal/Modals.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bal/FileUpload.java" />
       </list>
     </option>
   </component>
@@ -152,6 +201,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,12 +228,42 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AtWithJUnit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AtWithJUnit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AtWithJUnit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="environment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AtWithJUnit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,23 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AutomationTestingTest.Widget_Slider">
-    <configuration name="AutomationTestingTest.Interaction_Resizable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AutomationTestingTest" />
-      <option name="METHOD_NAME" value="Interaction_Resizable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AutomationTestingTest.UploadFiles">
     <configuration name="AutomationTestingTest.Interaction_SelectableSerialize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationTesting" />
       <extension name="coverage">
@@ -247,7 +312,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AutomationTestingTest.RunBootsrapModals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationTesting" />
       <extension name="coverage">
         <pattern>
@@ -257,13 +322,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AutomationTestingTest" />
-      <option name="METHOD_NAME" value="Interaction_StaticDragAndDrop" />
+      <option name="METHOD_NAME" value="RunBootsrapModals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AutomationTestingTest.TakeScreenshot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AutomationTestingTest.RunMultipleBootstrapModals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationTesting" />
       <extension name="coverage">
         <pattern>
@@ -273,7 +338,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AutomationTestingTest" />
-      <option name="METHOD_NAME" value="TakeScreenshot" />
+      <option name="METHOD_NAME" value="RunMultipleBootstrapModals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationTestingTest.UploadFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AutomationTestingTest" />
+      <option name="METHOD_NAME" value="UploadFiles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -297,11 +378,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AutomationTestingTest.UploadFiles" />
+        <item itemvalue="JUnit.AutomationTestingTest.RunMultipleBootstrapModals" />
+        <item itemvalue="JUnit.AutomationTestingTest.RunBootsrapModals" />
         <item itemvalue="JUnit.AutomationTestingTest.Widget_Slider" />
         <item itemvalue="JUnit.AutomationTestingTest.Interaction_SelectableSerialize" />
-        <item itemvalue="JUnit.AutomationTestingTest.Interaction_StaticDragAndDrop" />
-        <item itemvalue="JUnit.AutomationTestingTest.TakeScreenshot" />
-        <item itemvalue="JUnit.AutomationTestingTest.Interaction_Resizable" />
       </list>
     </recent_temporary>
   </component>
@@ -319,42 +400,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AutomationTestingTest_Interaction_StaticDragAndDrop - 2019.05.10 at 16h 01m 05s.xml">
-      <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 20m 35s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Interaction_StaticDragAndDrop - 2019.05.10 at 16h 02m 49s.xml">
-      <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 28m 04s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Interaction_StaticDragAndDrop - 2019.05.10 at 16h 23m 19s.xml">
-      <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 30m 02s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Interaction_StaticDragAndDrop - 2019.05.10 at 16h 24m 29s.xml">
-      <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 32m 53s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Widget_Slider - 2019.05.10 at 16h 57m 59s.xml">
-      <configuration name="AutomationTestingTest.Widget_Slider" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 34m 34s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Interaction_StaticDragAndDrop - 2019.05.10 at 17h 08m 38s.xml">
-      <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 36m 22s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Interaction_StaticDragAndDrop - 2019.05.10 at 17h 12m 27s.xml">
-      <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 38m 33s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Interaction_StaticDragAndDrop - 2019.05.10 at 17h 14m 33s.xml">
-      <configuration name="AutomationTestingTest.Interaction_StaticDragAndDrop" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 46m 22s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Interaction_SelectableSerialize - 2019.05.10 at 17h 55m 25s.xml">
-      <configuration name="AutomationTestingTest.Interaction_SelectableSerialize" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 47m 55s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomationTestingTest_Widget_Slider - 2019.05.10 at 18h 00m 23s.xml">
-      <configuration name="AutomationTestingTest.Widget_Slider" configurationId="JUnit" />
+    <history-entry file="AutomationTestingTest_UploadFiles - 2019.05.13 at 12h 49m 31s.xml">
+      <configuration name="AutomationTestingTest.UploadFiles" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="60" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22692889" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23373677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -368,7 +449,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
@@ -419,6 +500,20 @@
           <line>29</line>
           <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java</url>
+          <line>284</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java</url>
+          <line>290</line>
+          <properties class="tests.AutomationTestingTest" method="RunBootstrapModals">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -564,19 +659,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/environment/EnvironmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/logo.png" />
     <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.5/commons-io-2.5.jar!/org/apache/commons/io/FileUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -593,50 +676,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/environment/RunEnvironment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="187">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/environment/EnvironmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bal/Register.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bal/Modals.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="89" column="51" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="51" />
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bal/Interaction.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bal/Widget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="-117">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335">
-          <caret line="244" column="9" lean-forward="true" selection-start-line="244" selection-start-column="9" selection-end-line="244" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#AutoComplete#0;class#Widget#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bal/WebTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="89" column="54" lean-forward="true" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
+        <state relative-caret-position="413">
+          <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#368#369#0" expanded="true" />
@@ -645,12 +730,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bal/Widget.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bal/Interaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        <state relative-caret-position="104">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bal/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="135" column="48" lean-forward="true" selection-start-line="135" selection-start-column="48" selection-end-line="135" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AutomationTestingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="313" column="26" selection-start-line="313" selection-start-column="26" selection-end-line="313" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bal/FileUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
           </folding>
         </state>
       </provider>

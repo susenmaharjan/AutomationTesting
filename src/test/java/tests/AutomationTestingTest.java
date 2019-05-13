@@ -20,8 +20,10 @@ public class AutomationTestingTest {
     private static Alert _alert;
     private static Widget _widget;
     private static Interaction _interaction;
-
+    private static  Modals _modals;
+    private static FileUpload _fileUpload;
     private static final String alertPage = "http://demo.automationtesting.in/Alerts.html";
+
 
     @BeforeAll
     public static void SetUp() {
@@ -34,6 +36,8 @@ public class AutomationTestingTest {
         _alert = new Alert(_webDriver);
         _widget = new Widget(_webDriver);
         _interaction = new Interaction(_webDriver, _actions);
+        _modals = new Modals(_webDriver);
+        _fileUpload = new FileUpload(_webDriver);
     }
 
     @AfterEach
@@ -281,4 +285,34 @@ public class AutomationTestingTest {
                 "ScreenShot1",
                 "png");
     }
+
+    @Test
+    @Order(32)
+    public void RunBootstrapModals(){
+        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Modals.html")){
+            _webDriver.get("http://demo.automationtesting.in/Modals.html");
+        }
+        _modals.LaunchBootstrapModal();
+    }
+
+
+    @Test
+    @Order(33)
+    public void RunMultipleBootstrapModals(){
+        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/Modals.html")){
+            _webDriver.get("http://demo.automationtesting.in/Modals.html");
+        }
+        _modals.LaunchMultiBootstrapModals();
+    }
+
+    @Test
+    @Order(34)
+    public void UploadFiles(){
+        if(!_webDriver.getCurrentUrl().equalsIgnoreCase("http://demo.automationtesting.in/FileUpload.html")){
+            _webDriver.get("http://demo.automationtesting.in/FileUpload.html");
+        }
+        _fileUpload.UploadFile("D:\\einstein.jpg");
+
+    }
+
 }
